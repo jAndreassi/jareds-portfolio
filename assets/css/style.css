@@ -60,17 +60,28 @@ p {
   color: antiquewhite;
   font-size: 30px;
 }
+.projects {
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.secondarypics {
+  display: flex-;
+}
 
 .footer {
+  display: flex;
   background-color: darkolivegreen;
   margin-top: 40px;
   border: 2px solid black;
   border-top-right-radius: 20%;
   border-top-left-radius: 20%;
   padding: 20px;
+  justify-content: center;
 }
 
-#id {
+#bottom {
   display: flex;
 }
 
