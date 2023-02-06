@@ -3,16 +3,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: url(assets/coding-backdrop/img/bg.png);
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: row;
 }
 
@@ -28,11 +30,14 @@ header {
 
 h1 {
   color: antiquewhite;
+  font-size: 35px;
+  float: left;
 }
 
 li {
   list-style: none;
-  display: inline;
+
+  font-size: 25px;
 }
 
 a {
@@ -41,9 +46,10 @@ a {
 
 .nav {
   justify-content: space-between;
+  float: right;
 }
 
-.info {
+#info {
   border: 2px solid black;
   padding: 40px;
   border-radius: 20%;
@@ -60,17 +66,19 @@ p {
   color: antiquewhite;
   font-size: 30px;
 }
-.projects {
-  border: 2px solid black;
+#projects {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
 .secondarypics {
-  display: flex-;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 50px;
 }
 
-.footer {
+#footer {
   display: flex;
   background-color: darkolivegreen;
   margin-top: 40px;
@@ -83,8 +91,14 @@ p {
 
 #bottom {
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 footer ul li {
   font-size: 35px;
+}
+
+a:link {
+  text-decoration: none;
 }
