@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(assets/coding-backdrop/img/bg.png);
+  background-image: url(coding-backdrop.jfif);
 }
 
 .container {
@@ -101,4 +101,31 @@ footer ul li {
 
 a:link {
   text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    background-color: rgb(127, 30, 30);
+  }
+
+  #footer {
+    background-color: rgb(127, 30, 30);
+  }
+  #info {
+    background-color: rgb(127, 30, 30);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-color: rgb(15, 178, 167);
+  }
+
+  #footer {
+    background-color: rgb(15, 178, 167);
+  }
+
+  #info {
+    background-color: rgb(15, 178, 167);
+  }
 }
