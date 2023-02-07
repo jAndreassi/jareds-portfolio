@@ -84,7 +84,6 @@ p {
 .secondarypics {
   display: flex;
   justify-content: center;
-
   margin-top: 50px;
 }
 
@@ -124,6 +123,9 @@ a:link {
   }
   .large {
     display: none;
+  }
+  .secondarypics {
+    flex-wrap: wrap;
   }
 }
 /* Settings for a small desktp or ipad  */
