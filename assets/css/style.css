@@ -3,9 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(coding-backdrop.jfif);
 }
-
+body {
+  background-image: url(../coding-backdrop.jfif);
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -23,20 +24,29 @@ header {
   width: 100%;
   padding: 35px;
   font-size: 50px;
-  background-color: darkolivegreen;
+  background-color: rgb(106 176 2);
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
+}
+
+.large {
+  max-width: 33%;
 }
 
 h1 {
   color: antiquewhite;
   font-size: 35px;
-  float: left;
+  align-self: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
   list-style: none;
-
+  justify-content: space-between;
   font-size: 25px;
 }
 
@@ -45,15 +55,15 @@ a {
 }
 
 .nav {
-  justify-content: space-between;
-  float: right;
+  min-width: 33%;
+  align-self: center;
 }
 
 #info {
   border: 2px solid black;
   padding: 40px;
   border-radius: 20%;
-  background-color: darkolivegreen;
+  background-color: rgb(106 176 2);
   margin-top: 50px;
 }
 
@@ -80,7 +90,7 @@ p {
 
 #footer {
   display: flex;
-  background-color: darkolivegreen;
+  background-color: rgb(106 176 2);
   margin-top: 40px;
   border: 2px solid black;
   border-top-right-radius: 20%;
@@ -102,30 +112,49 @@ footer ul li {
 a:link {
   text-decoration: none;
 }
-
+/* Settings for phone screen. */
 @media screen and (max-width: 992px) {
-  header {
-    background-color: rgb(127, 30, 30);
-  }
-
-  #footer {
-    background-color: rgb(127, 30, 30);
-  }
+  header,
+  #footer,
   #info {
-    background-color: rgb(127, 30, 30);
+    background-color: black;
+  }
+  .small {
+    display: block;
+  }
+  .large {
+    display: none;
   }
 }
-
+/* Settings for a small desktp or ipad  */
 @media screen and (max-width: 768px) {
-  header {
-    background-color: rgb(15, 178, 167);
-  }
-
-  #footer {
-    background-color: rgb(15, 178, 167);
-  }
-
+  header,
+  #footer,
   #info {
-    background-color: rgb(15, 178, 167);
+    background-color: rgb(65 56 2);
+  }
+  .large {
+    display: none;
+  }
+  .small {
+    display: block;
+  }
+  .list {
+    flex-flow: column;
+  }
+  .avatar {
+    width: 33.33%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
+/* Settings for desktop screen. */
+@media screen and (min-width: 993px) {
+  .small {
+    display: none;
+  }
+  header {
+    width: 100%;
   }
 }

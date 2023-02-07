@@ -11,35 +11,42 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
+ </head>
 
-
-    
-
-  </head>
+ 
   <body>
+    <!-- I put the whole page in a container, this is the first flexbox  -->
     <div class="container">
+      <!-- This is my header which includes a nav bar, child of a flex and is also a flex-box  -->
       <header id="header">
-        <h1>Jared Andreassi's <br/>Portfolio</h1>
+        <!-- Class in this div is going to be for larger screens -->
+        <div class="large">
+        <h1>Jared Andreassi's Portfolio</h1>
+        </div>
+        <!-- Class in this div is going to be for a smaller screens  -->
+        <div class="small">
+         <h1>J. Andreasi's <br/>Portfolio</h1> 
+        </div>
+
+      <!-- child of flex  -->
         <img class="avatar" src="./assets/coding-avatar.png" alt="person coding-avatar"/>
+      <!-- Also a child of flex  -->
         <nav class="nav">
-          <ul>
+          <ul class="list">
           <li><a href="#me">About</a></li>
           <li><a href="#projects">Work</a></li>
           <li><a href="#footer">Contact</a></li>
           </ul>
         </nav>
       </header>
-
+<!-- This is the about me section, no flex  -->
       <main id="info">
         <h2>About Me!</h2>
         <p>
-          My Name is Jared Andreasi and I am just beginning my journey! Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Rerum cum nihil
-          ducimus nobis, nemo tempora nulla quae. A perferendis rem quisquam quo
-          sed laudantium itaque provident expedita, et enim! Accusamus.
+          My Name is Jared Andreasi and I am just beginning my journey! This is my inital portfolio but I hope to grow and learn all the skills needed to be the best web developer I can be. I am currently in week 2 of Columbia software engineering bootcamp so as the weeks go by I will contunie to show my skills and knowlegde in this portfolio.
         </p>
       </main>
-      
+      <!-- This is where i will put my projects, but them in 2 seperate classes but only the secondary pics will be in a flex box. -->
 
       <section id="projects">
         <div class="mainproject">
@@ -68,7 +75,7 @@
           /></a>
         </div>
       </section>
-
+<!-- This is going to be my footer where I will put all my contact info. This will be a flex-box.  -->
       <footer id="footer">
         <ul id="bottom">
           <li class="links">

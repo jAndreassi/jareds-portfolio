@@ -2,7 +2,7 @@
 
 ## Description
 
-I wanted to build a portfolio to show employers that I have knowledge to work in web development. In this portfolio I have information about me, projects that I have done and ways to contact me. I learned many things building this webpage. First it was my first item I built from scratch with in the long run should be very helpful. Also, learned to use media quireies, border-radius and flex-box.
+I wanted to build a portfolio to show employers that I have knowledge to work in web development. In this portfolio I have information about me, projects that I have done and ways to contact me. I learned many things building this webpage. First it was my first item I built from scratch with in the long run should be very helpful. Also, learned to use media queries, border-radius and flex-box.
 
 ## Installation
 
